@@ -117,9 +117,11 @@ header nav .menu a:hover {
 
 .search-form {
   display: flex;
+  border: 1px solid var(--main-bg-color);
+  border-radius: 10px;
 }
 
-.search-form i {
+.search-icon {
   padding: 1em;
   background-color: var(--main-bg-color);
   border-radius: 10px 0 0 10px;
@@ -135,7 +137,7 @@ header nav .menu a:hover {
   outline: none;
 }
 
-.search-form button {
+.search-btn {
   cursor: pointer;
   padding: 1.4em;
   border: none;
@@ -143,6 +145,10 @@ header nav .menu a:hover {
   background-color: var(--main-color);
   color: white;
   font-weight: bold;
+}
+
+.search-icon-mobile {
+  display: none;
 }
 
 .search-filters {
@@ -411,5 +417,96 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  header nav {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header nav .menu a:hover {
+    border-top: none;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0rem!important;
+  }
+
+  .menu a{
+    flex: 1;
+    text-align: center;
+    border-bottom: 3px solid var(--main-bg-color);
+  }
+
+  .menu a:first-child {
+    border-bottom: 3px solid var(--main-color);
+  }
+
+  .menu a:hover {
+    border-top: none;
+  }
+
+  main, .search-hero {
+    padding: 0 20px;
+  }
+
+  .search-hero-search {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  .search-icon-mobile {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+    cursor: pointer;
+  }
+
+  .search-filters-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .main-container {
+    padding: 0;
+  }
+
+  .hebergements-and-populaires {
+    flex-direction: column-reverse
+  }
+
+  .populaires-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }
+
+  .hebergements{
+    padding: 10px!important;
+    background-color: white!important;
+  }
+
+  .hebergements-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .activites-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
