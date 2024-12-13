@@ -332,6 +332,7 @@ header nav .menu a:hover {
 
 .activites-card-content {
   padding: 0 20px 10px 20px;
+  height: 50px;
 }
 
 /******** Footer **********/
@@ -358,6 +359,12 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .search-filters{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -387,6 +394,18 @@ footer {
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
+  }
+
+  .activites-card-content {
+    height: 70px;
+  }
+
+  .activites-cards img {
+    height: 200px;
+  }
+
+  .footer-container {
+    gap: 5rem;
   }
 }
 
