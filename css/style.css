@@ -95,11 +95,8 @@ header nav .menu a {
   border-top: 3px solid transparent;
 }
 
-.menu a:first-child {
-  color: var(--main-color);
-}
-
 header nav .menu a:hover {
+    color: var(--main-color);
   border-top: 3px solid var(--main-color);
 }
 
@@ -448,7 +445,7 @@ footer {
     border-bottom: 3px solid var(--main-bg-color);
   }
 
-  .menu a:first-child {
+  .menu a:hover {
     border-bottom: 3px solid var(--main-color);
   }
 
