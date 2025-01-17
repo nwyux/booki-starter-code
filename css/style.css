@@ -51,7 +51,7 @@ a {
 }
 
 .card:hover {
-    scale: 1.03;
+    transform: scale(1.03);
 }
 
 .card img {
